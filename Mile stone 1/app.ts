@@ -1,0 +1,1 @@
+const profilePicture =document.getElementById("profilePicture") as HTMLInputElement;

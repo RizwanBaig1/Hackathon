@@ -1,0 +1,68 @@
+!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rusme Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Static Resume Builder</h1>
+    <form id="resumeForm">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="name">Father Name</label>
+            <input type="text" id="fatherName" name="fathername" required><br>
+
+            <label for="email">Email Address</label>
+            <input type="text" id="email" name="email" required><br>
+
+            <label for="phone">Contact Number</label>
+            <input type="tel" id="phone" name="phone" required><br>
+
+            <label for="profilePicture">profile Picture </label>
+            <input type="file" id="profilePicture" name="profilePicture" accept="image/*" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Education</legend>
+            <label for="education">Education</label>
+            <textarea name="education" id="education" rows="5" required></textarea> <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Experince</legend>
+            <label for="experince">Experince</label>
+            <textarea name="experince" id="experince" rows="5" required></textarea> <br>
+           </fieldset>
+
+            <fieldset>
+                <legend>Skill</legend>
+                <label for="skill">Skill</label>
+                <textarea name="skill" id="skill" rows="5" required></textarea> <br>
+
+
+            </fieldset>
+
+              <button type="submit">Create your Resume</button>
+        </form>
+
+
+
+        <!-- Dynamic Ressume will be genrated below -->
+         <div id="resumeOutput">
+
+         </div>
+
+
+<script src="app.js">
+
+</script>
+</body>
+
+</html>
